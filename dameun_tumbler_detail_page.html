@@ -175,6 +175,21 @@
   .m-card.ours ul{ color:#DCE9F5; }
   .material-note{ font-size:11.5px; color:var(--ink-500); line-height:1.7; background:var(--cream-100); padding:12px 14px; border-radius:8px; text-align:left; }
 
+  /* ---------- TEST REPORT ---------- */
+  .testreport{ text-align:center; background:#fff; }
+  .testreport h2{ font-size:22px; margin-bottom:8px; }
+  .testreport p.sub{ font-size:13px; color:var(--ink-500); margin-bottom:22px; line-height:1.6; }
+  .test-card{ background:var(--blue-100); border-radius:14px; padding:20px 18px; text-align:left; }
+  .test-card .pass{
+    display:inline-flex; align-items:center; gap:6px; background:var(--blue-900); color:#FFE7B8;
+    font-size:12.5px; font-weight:800; padding:5px 12px; border-radius:99px; margin-bottom:12px;
+  }
+  .test-row{ display:flex; justify-content:space-between; font-size:12.5px; padding:7px 0; border-bottom:1px solid rgba(0,0,0,.06); }
+  .test-row span:first-child{ color:var(--ink-500); }
+  .test-row span:last-child{ font-weight:700; color:var(--blue-900); text-align:right; }
+  .test-row:last-child{ border-bottom:none; }
+  .test-note{ margin-top:14px; font-size:11px; color:var(--ink-500); line-height:1.6; }
+
   /* ---------- PERFORMANCE ---------- */
   .performance{ text-align:center; background:var(--cream-100); }
   .performance h2{ font-size:22px; margin-bottom:6px; }
@@ -396,6 +411,21 @@
     <div class="material-note">
       ℹ 304도 식품용으로 안전한 소재예요. 다만 몰리브덴이 더해진 316은 부식·산화에 더 강해서, 과일에이드·탄산처럼 산성 음료를 자주 담거나 오래 쓸수록 차이가 체감돼요. (특정 질병 예방·치료 효과를 의미하는 것은 아니며, 소재 자체의 내식성 특성을 설명한 것입니다.)
     </div>
+  </section>
+
+  <!-- TEST REPORT -->
+  <section class="section testreport">
+    <p class="eyebrow" style="color:var(--blue-500)">SAFETY TEST</p>
+    <h2>수입식품등 검사결과로<br>확인된 안전성</h2>
+    <p class="sub">매입처가 수입 시 진행한 공인 시험기관 검사 결과입니다</p>
+    <div class="test-card">
+      <div class="pass">✔ 판정 : 적합</div>
+      <div class="test-row"><span>검사대상</span><span>TUMBLER (본 제품 동일)</span></div>
+      <div class="test-row"><span>검사기관</span><span>(사)한국건강기능식품협회부설<br>한국기능식품연구원</span></div>
+      <div class="test-row"><span>접수번호</span><span>202500388386</span></div>
+      <div class="test-row"><span>접수일자</span><span>2025년 06월 10일</span></div>
+    </div>
+    <div class="test-note">본 시험성적서는 매입처(주식회사 이우드림무역)가 수입 신고 시 진행한 검사 결과이며, 담은마켓이 자체 발급한 인증이 아닙니다. 세부 시험항목 원본은 요청 시 제공 가능합니다.</div>
   </section>
 
   <!-- COLORS -->
