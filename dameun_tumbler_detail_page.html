@@ -85,6 +85,19 @@
     color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center;
   }
 
+  /* ---------- CHECK POINT 1~8 ---------- */
+  .points{ background:#fff; }
+  .points h2{ font-size:22px; text-align:center; margin-bottom:6px; }
+  .points p.sub{ font-size:13px; color:var(--ink-500); text-align:center; margin-bottom:26px; }
+  .point-list{ display:flex; flex-direction:column; gap:10px; }
+  .point-item{ display:flex; gap:14px; align-items:flex-start; background:var(--cream-100); border-radius:12px; padding:14px 16px; }
+  .point-item .pnum{
+    flex:none; width:26px; height:26px; border-radius:50%; background:var(--blue-900); color:#FFE7B8;
+    font-family:'Noto Serif KR'; font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center;
+  }
+  .point-item .ptxt b{ display:block; font-size:13.5px; margin-bottom:3px; color:var(--ink-900); }
+  .point-item .ptxt span{ font-size:12px; color:var(--ink-500); line-height:1.5; }
+
   /* ---------- IDEA / INSIGHT (담은마켓 아이디어 강조) ---------- */
   .idea{
     background:radial-gradient(130% 160% at 85% 0%, var(--coral) 0%, var(--blue-900) 55%, #101b2b 100%);
@@ -191,6 +204,8 @@
     box-shadow:0 0 0 1.5px var(--line);
   }
   .swatch span{ font-size:11.5px; color:var(--ink-500); }
+  .swatch .circle{ overflow:hidden; background:#fff; }
+  .swatch .circle img{ width:100%; height:100%; object-fit:cover; }
   .c-blue{ background:#5A7CA8; } .c-pink{ background:#E7A9B6; } .c-purple{ background:#A99BCB; }
   .c-dark{ background:#26282B; } .c-white{ background:#F5F5F2; }
 
@@ -347,6 +362,23 @@
     </div>
   </section>
 
+  <!-- CHECK POINT -->
+  <section class="section points">
+    <p class="eyebrow" style="color:var(--blue-500); text-align:center;">CHECK POINT</p>
+    <h2>담은마켓 텀블러,<br>이런 점이 좋아요</h2>
+    <p class="sub">3종세트 안에 담긴 8가지 포인트</p>
+    <div class="point-list">
+      <div class="point-item"><span class="pnum">1</span><div class="ptxt"><b>프리미엄 스테인리스 316</b><span>변색이나 냄새 배임 걱정 없이 오래 안심하고 사용해요</span></div></div>
+      <div class="point-item"><span class="pnum">2</span><div class="ptxt"><b>장시간 지속되는 강력한 보온·보냉</b><span>따뜻한 음료는 오래 따뜻하게, 시원한 음료는 하루 종일 시원하게</span></div></div>
+      <div class="point-item"><span class="pnum">3</span><div class="ptxt"><b>한 손으로 톡, 원터치 & 이중 안전 잠금</b><span>가볍게 눌러 여는 원터치 방식에 이중 잠금까지, 내용물 샐 걱정 없이</span></div></div>
+      <div class="point-item"><span class="pnum">4</span><div class="ptxt"><b>텀블러 속에 쏙, 일체형 내장 빨대</b><span>빨대를 따로 챙기거나 잃어버릴 걱정 없이 텀블러 안에 내장</span></div></div>
+      <div class="point-item"><span class="pnum">5</span><div class="ptxt"><b>구석구석 깨끗한 분리형 구조</b><span>손이 닿지 않는 곳까지, 동봉된 전용 세척솔로 간편하게</span></div></div>
+      <div class="point-item"><span class="pnum">6</span><div class="ptxt"><b>부담 없이 가벼운 500ml 용량</b><span>매일 들고 다니기 좋은 용량과 무게</span></div></div>
+      <div class="point-item"><span class="pnum">7</span><div class="ptxt"><b>차량 컵홀더에 쏙 들어가는 슬림 디자인</b><span>운전 중에도 흔들림 없이 편하게</span></div></div>
+      <div class="point-item"><span class="pnum">8</span><div class="ptxt"><b>안정적인 논슬립 바닥 패드</b><span>테이블 위에서도 쉽게 밀리거나 쓰러지지 않게</span></div></div>
+    </div>
+  </section>
+
   <!-- MATERIAL STORY -->
   <section class="section material">
     <p class="eyebrow" style="color:var(--blue-500)">MATERIAL</p>
@@ -377,16 +409,41 @@
     </div>
   </section>
 
+  <!-- PERFORMANCE -->
+  <section class="section performance">
+    <p class="eyebrow" style="color:var(--blue-500)">PERFORMANCE</p>
+    <h2>하루종일 지속되는<br>강력한 보온·보냉</h2>
+    <p class="sub">따뜻한 음료는 오래 따뜻하게, 시원한 음료는 하루 종일 시원하게</p>
+    <div class="perf-grid">
+      <div class="perf-card cold">
+        <div class="perf-ico">🧊</div>
+        <div class="perf-num">COLD</div>
+        <div class="perf-label">얼음이 오래도록 녹지 않아요</div>
+      </div>
+      <div class="perf-card hot">
+        <div class="perf-ico">🔥</div>
+        <div class="perf-num">HOT</div>
+        <div class="perf-label">따뜻한 온도가 오래 유지돼요</div>
+      </div>
+    </div>
+    <div class="perf-note">※ 보온보냉 지속 시간은 실 사용 환경(외기온도·음료 종류 등)에 따라 달라질 수 있어요. [정확한 보온보냉 유지 시간은 매입처 자재 성적서 확인 후 기재해주세요.]</div>
+    <div class="twoway-badge">한 손으로 톡, 원터치 & 이중 안전 잠금</div>
+    <div class="twoway-grid">
+      <div class="twoway-card"><b>① 빨대 모드</b><span>내장된 빨대를 꺼내 편하게</span></div>
+      <div class="twoway-card"><b>② 음용구 모드</b><span>뚜껑을 열어 컵처럼 편하게</span></div>
+    </div>
+  </section>
+
   <!-- COLORS -->
   <section class="section colors">
     <h2>색상 5종</h2>
     <p class="sub">매일 쓰는 물건이니까, 마음에 드는 색으로</p>
     <div class="swatch-row">
-      <div class="swatch"><div class="circle c-white"></div><span>화이트</span></div>
-      <div class="swatch"><div class="circle c-dark"></div><span>블랙</span></div>
-      <div class="swatch"><div class="circle c-purple"></div><span>퍼플</span></div>
-      <div class="swatch"><div class="circle c-pink"></div><span>핑크</span></div>
-      <div class="swatch"><div class="circle c-blue"></div><span>블루</span></div>
+      <div class="swatch"><div class="circle"><img src="card_화이트.png" alt="화이트"></div><span>화이트</span></div>
+      <div class="swatch"><div class="circle"><img src="card_블랙.png" alt="블랙"></div><span>블랙</span></div>
+      <div class="swatch"><div class="circle"><img src="card_퍼플.png" alt="퍼플"></div><span>퍼플</span></div>
+      <div class="swatch"><div class="circle"><img src="card_핑크.png" alt="핑크"></div><span>핑크</span></div>
+      <div class="swatch"><div class="circle"><img src="card_블루.png" alt="블루"></div><span>블루</span></div>
     </div>
   </section>
 
