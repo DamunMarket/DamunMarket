@@ -85,6 +85,33 @@
     color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center;
   }
 
+  /* ---------- IDEA / INSIGHT (담은마켓 아이디어 강조) ---------- */
+  .idea{
+    background:radial-gradient(130% 160% at 85% 0%, var(--coral) 0%, var(--blue-900) 55%, #101b2b 100%);
+    color:#fff; padding:56px 24px 44px; text-align:left;
+  }
+  .idea .idea-badge{
+    display:inline-flex; align-items:center; gap:6px; background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.45); color:#FFE7B8; font-size:12.5px; font-weight:800;
+    padding:6px 14px; border-radius:99px; margin-bottom:18px; letter-spacing:.04em;
+  }
+  .idea h1{ font-size:26px; font-weight:900; color:#fff; margin-bottom:16px; line-height:1.45; }
+  .idea h1 em{ font-style:normal; color:#FFE7B8; }
+  .idea .idea-lead{ font-size:14px; line-height:1.8; color:#EAF1F8; margin:0 0 26px; }
+  .idea-compare{ display:flex; flex-direction:column; gap:12px; }
+  .idea-card{ border-radius:14px; padding:18px 18px; }
+  .idea-card.before{ background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.18); }
+  .idea-card.after{ background:#FFE7B8; color:var(--blue-900); border:2px solid #fff; }
+  .idea-card .tag{
+    display:inline-block; font-size:11px; font-weight:800; letter-spacing:.04em; margin-bottom:10px;
+    padding:3px 10px; border-radius:99px;
+  }
+  .idea-card.before .tag{ background:rgba(255,255,255,.15); color:#EAF1F8; }
+  .idea-card.after .tag{ background:var(--blue-900); color:#FFE7B8; }
+  .idea-card .line{ font-size:13px; line-height:1.9; }
+  .idea-card.before .line{ color:#D9E4EE; }
+  .idea-card.after .line.big{ font-size:15px; font-weight:800; line-height:1.7; }
+
   /* ---------- SET COMPOSITION ---------- */
   .compose{ background:var(--blue-900); color:#fff; }
   .compose .eyebrow{ color:#FFE7B8; }
@@ -211,10 +238,31 @@
 <body>
 <div class="page">
 
+  <!-- IDEA / INSIGHT -->
+  <section class="idea">
+    <div class="idea-badge">💡 담은마켓의 아이디어</div>
+    <h1>텀블러는 샀는데,<br><em>세척솔은 따로</em> 사셨나요?</h1>
+    <p class="idea-lead">빨대 속, 뚜껑 틈새는 손이 안 닿아서 매번 골칫거리예요. 정작 텀블러를 살 때는 세척솔까지 같이 챙기는 경우가 많지 않더라고요. 저희는 그 불편함에 주목했어요 — 그래서 처음부터 텀블러에 전용 빨대세척솔·텀블러세척솔까지 한 번에 담았습니다.</p>
+    <div class="idea-compare">
+      <div class="idea-card before">
+        <span class="tag">보통은 이렇게</span>
+        <div class="line">① 텀블러부터 구매</div>
+        <div class="line">② 빨대솔 따로 검색·주문</div>
+        <div class="line">③ 세척스펀지 또 따로 검색·주문</div>
+        <div class="line">④ 배송 여러 번 기다린 뒤에야 위생적으로 사용 시작</div>
+      </div>
+      <div class="idea-card after">
+        <span class="tag">담은마켓은 다르게</span>
+        <div class="line big">텀블러 + 빨대세척솔 + 텀블러세척솔</div>
+        <div class="line">한 번의 주문, 한 번의 배송으로 바로 위생적으로 사용 시작!</div>
+      </div>
+    </div>
+  </section>
+
   <!-- COMPOSITION -->
   <section class="section compose">
     <p class="eyebrow">SET COMPOSITION</p>
-    <h2>3종세트, 이렇게 구성했어요</h2>
+    <h2>고민 끝에 완성한 3종세트</h2>
     <div class="compose-grid">
       <div class="compose-card">
         <div class="thumb"><img src="https://cdn1.domeggook.com/upload/item/2025/07/17/17527362603D0CBF93AD8AC708588D0A/17527362603D0CBF93AD8AC708588D0A_img_760?hash=bc78ca1dec13e91b235e45ce0d03486e" alt="500ml 텀블러"></div>
