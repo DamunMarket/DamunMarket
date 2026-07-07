@@ -204,10 +204,9 @@
     box-shadow:0 0 0 1.5px var(--line);
   }
   .swatch span{ font-size:11.5px; color:var(--ink-500); }
-  .swatch .circle{ overflow:hidden; background:#fff; }
-  .swatch .circle img{ width:100%; height:100%; object-fit:cover; }
   .c-blue{ background:#5A7CA8; } .c-pink{ background:#E7A9B6; } .c-purple{ background:#A99BCB; }
   .c-dark{ background:#26282B; } .c-white{ background:#F5F5F2; }
+  .colors-photo{ width:100%; display:block; margin-top:24px; border-radius:14px; }
 
   /* ---------- SPEC TABLE ---------- */
   .spec{ background:var(--cream-100); }
@@ -339,7 +338,6 @@
   <section class="real-detail">
     <img src="https://gi.esmplus.com/skdhwnd7/%EB%B3%80/11/11.jpg" alt="316 스테인레스 이단 원터치 500ml 텀블러 5색 라인업">
     <img src="https://gi.esmplus.com/skdhwnd7/%EB%B3%80/11/2.jpg" alt="제품 상세정보, 사이즈 22.5cm x 7cm">
-    <img src="https://gi.esmplus.com/skdhwnd7/%EB%B3%80/11/33.jpg" alt="색상별 제품컷 5종">
     <img src="https://gi.esmplus.com/skdhwnd7/%EB%B3%80/11/4.png" alt="색상 라인업 및 실측 사이즈 비교">
     <div class="credit">본 상세이미지는 매입처(도매꾹 59842602)로부터 사용을 허가받은 실제 제품 촬영 이미지입니다</div>
   </section>
@@ -413,12 +411,13 @@
     <h2>색상 5종</h2>
     <p class="sub">매일 쓰는 물건이니까, 마음에 드는 색으로</p>
     <div class="swatch-row">
-      <div class="swatch"><div class="circle"><img src="card_화이트.png" alt="화이트"></div><span>화이트</span></div>
-      <div class="swatch"><div class="circle"><img src="card_블랙.png" alt="블랙"></div><span>블랙</span></div>
-      <div class="swatch"><div class="circle"><img src="card_퍼플.png" alt="퍼플"></div><span>퍼플</span></div>
-      <div class="swatch"><div class="circle"><img src="card_핑크.png" alt="핑크"></div><span>핑크</span></div>
-      <div class="swatch"><div class="circle"><img src="card_블루.png" alt="블루"></div><span>블루</span></div>
+      <div class="swatch"><div class="circle c-white"></div><span>화이트</span></div>
+      <div class="swatch"><div class="circle c-dark"></div><span>블랙</span></div>
+      <div class="swatch"><div class="circle c-purple"></div><span>퍼플</span></div>
+      <div class="swatch"><div class="circle c-pink"></div><span>핑크</span></div>
+      <div class="swatch"><div class="circle c-blue"></div><span>블루</span></div>
     </div>
+    <img class="colors-photo" src="https://gi.esmplus.com/skdhwnd7/%EB%B3%80/11/33.jpg" alt="색상별 제품컷 5종 실제 사진">
   </section>
 
   <!-- SPEC -->
